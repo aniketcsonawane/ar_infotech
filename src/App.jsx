@@ -1,0 +1,39 @@
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
+import MainLayout from "./layouts/MainLayout";
+import Home from './pages/Home'
+import About from './pages/About'
+import ContactUs from './pages/ContactUs'
+import Service from './pages/Services'
+import ServiceDetails from "./components/ServiceDetails";
+
+function App() {
+   useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
+  return (
+    <>
+      <Router>
+        <Routes >
+          {/* Routes */}
+          <Route path="/" element={<MainLayout />} >
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="services" element={<Service />} />
+            <Route path="contact-us" element={<ContactUs />} />
+            <Route path="/services/:id" element={<ServiceDetails />} />
+          </Route>
+        </Routes>
+      </Router>
+    </>
+  )
+}
+
+export default App
