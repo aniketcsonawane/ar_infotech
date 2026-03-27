@@ -4,7 +4,7 @@ const Header = () => {
       <div className="container-fluid container-xl d-flex align-items-center">
 
         <a href="/" className="logo d-flex align-items-center me-auto">
-            <img src="/src/assets/img/AR_logo.jpg" alt="" />
+            <img src="/images/AR_logo.jpg" alt="" />
           <h1 className="text-9xl">AR infotech</h1>
         </a>
 

@@ -45,7 +45,7 @@ const Testimonials = () => {
     >
       {/* Background */}
       <img
-        src="/src/assets/img/testimonials-bg.jpg"
+        src="/images/testimonials-bg.jpg"
         className="testimonials-bg"
         alt=""
       />
@@ -64,7 +64,7 @@ const Testimonials = () => {
               <div className="testimonial-item text-center">
 
                 <img
-                  src={`/src/assets/img/testimonials/${t.img}`}
+                  src={`/images/testimonials/${t.img}`}
                   className="testimonial-img"
                   alt=""
                 />

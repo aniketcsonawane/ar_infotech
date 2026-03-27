@@ -4,7 +4,7 @@
 //       id="hero"
 //       className="d-flex align-items-center"
 //       style={{
-//         backgroundImage: `url(/src/assets/img/hero-bg.jpg)`
+//         backgroundImage: `url(/images/hero-bg.jpg)`
 //       }}
 //     >
 //       <div className="container text-center">
@@ -25,7 +25,7 @@ const Hero = () => {
       id="hero"
       className="hero section dark-background"
       style={{
-        backgroundImage: "url(/src/assets/img/hero-bg.jpg)",
+        backgroundImage: "url(/images/hero-bg.jpg)",
         backgroundSize: "cover"
       }}
     >

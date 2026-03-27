@@ -45,7 +45,7 @@ const FeatureTabContent = ({ feature }) => {
 
         <div className="col-lg-6 order-1 order-lg-2 text-center">
           <img
-            src={`/src/assets/img/${feature.img}`}
+            src={`/images/${feature.img}`}
             className="img-fluid"
             alt=""
           />

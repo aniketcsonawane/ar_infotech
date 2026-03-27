@@ -7,7 +7,7 @@ const About = () => {
           <div className="col-lg-6">
             <h3>Voluptatem dignissimos provident laboris</h3>
             <img
-              src="/src/assets/img/about.jpg"
+              src="/images/about.jpg"
               className="img-fluid rounded-4 mb-4"
             />
             <p>Lorem ipsum dolor sit amet...</p>

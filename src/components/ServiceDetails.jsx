@@ -7,7 +7,7 @@ const servicesData = [
     title: "Web Design",
     description:
       "We create modern and responsive website designs tailored to your business.",
-    image: "/src/assets/img/services.jpg",
+    image: "/images/services.jpg",
     points: [
       "Responsive design",
       "Modern UI/UX",
@@ -19,7 +19,7 @@ const servicesData = [
     title: "Software Development",
     description:
       "Custom software solutions to automate and scale your business operations.",
-    image: "/src/assets/img/services.jpg",
+    image: "/images/services.jpg",
     points: [
       "Custom ERP systems",
       "CRM solutions",
@@ -31,7 +31,7 @@ const servicesData = [
     title: "Product Management",
     description:
       "Manage your products effectively with structured workflows.",
-    image: "/src/assets/img/services.jpg",
+    image: "/images/services.jpg",
     points: [
       "Inventory tracking",
       "Product lifecycle",
@@ -55,7 +55,7 @@ const ServiceDetails = () => {
         className="page-title dark-background"
         data-aos="fade"
         style={{
-          backgroundImage: "url(/src/assets/img/page-title-bg.webp)",
+          backgroundImage: "url(/images/page-title-bg.webp)",
         }}
       >
         <div className="container position-relative">
