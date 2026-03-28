@@ -5,14 +5,13 @@ function ContactUs() {
     return (
         <section id="contact" className="contact section">
 
-            <div className="container section-title" data-aos="fade-up">
-                <h2>Contact</h2>
+            <div className="container section-title pb-4" data-aos="fade-up">
+                {/* <h2>Contact</h2> */}
                 <p>We fulfill your requirements</p>
             </div>
 
             <div className="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div className="row gy-4">
+                <div className="row gy-2">
                     <div className="col-lg-6 ">
                         <div className="row gy-4">
 

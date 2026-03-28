@@ -1,8 +1,11 @@
 import React from 'react'
+import Contact from '../components/ContactUs'
 
 function ContactUs() {
   return (
-    <div>ContactUs</div>
+    <div className='py-5'>
+      <Contact />
+    </div>
   )
 }
 

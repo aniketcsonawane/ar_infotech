@@ -1,4 +1,5 @@
 import React from 'react'
+import { servicesData } from '../../data/serviceData'
 
 function Footer() {
   return (
@@ -8,7 +9,7 @@ function Footer() {
         <div className="row gy-4">
           <div className="col-lg-4 col-md-6 footer-about">
             <a href="index.html" className="logo d-flex align-items-center">
-              <span className="sitename">Dewi</span>
+              <span className="sitename">AR Infotech</span>
             </a>
             <div className="footer-contact pt-3">
               <p>Padtani Complex, behind Joshi palace,</p>
@@ -25,7 +26,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="col-lg-2 col-md-3 footer-links">
+          {/* <div className="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li><i className="bi bi-chevron-right"></i> <a href="#">Home</a></li>
@@ -34,16 +35,21 @@ function Footer() {
               <li><i className="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i className="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
-          </div>
+          </div> */}
 
           <div className="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i className="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+              {servicesData.map((service, index)=>{                
+                return(
+                  <li key={index }><i className="bi bi-chevron-right"></i> <a href={`/services/${service.id}`}>{service.title}</a></li>
+                )
+              })}
+              {/* <li><i className="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
               <li><i className="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
               <li><i className="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
               <li><i className="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i className="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i className="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li> */}
             </ul>
           </div>
 
@@ -62,7 +68,7 @@ function Footer() {
         </div>
 
         <div className="container copyright text-center mt-4">
-          <p>© <span>Copyright</span> <strong className="px-1 sitename">Dewi</strong> <span>All Rights Reserved</span></p>
+          <p>© <span>Copyright</span> <strong className="px-1 sitename">AR Infotech</strong> <span>All Rights Reserved</span></p>
           <div className="credits">
             Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by</div>
         </div>

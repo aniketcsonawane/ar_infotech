@@ -7,14 +7,17 @@ const Header = () => {
       name: "Home", path: "/"
     },
     {
+      name: "About Us", path: "/about_us"
+    },
+    {
       name: "Services", path: "/services"
     },
-    {
-      name: "Portfolio", path: "/portfolio"
-    },
-    {
-      name: "Team", path: "/team"
-    },
+    // {
+    //   name: "Portfolio", path: "/portfolio"
+    // },
+    // {
+    //   name: "Team", path: "/team"
+    // },
     {
       name: "Contact", path: "/contact-us"
     },
@@ -23,10 +26,8 @@ const Header = () => {
   return (
     <header className="header d-flex align-items-center fixed-top">
       <div className="container-fluid container-xl d-flex align-items-center">
-
         <a href="/" className="logo d-flex align-items-center me-auto">
-          <img src="/images/ar_logo.jpeg" alt="" />
-          <h1 className="text-9xl">AR infotech</h1>
+          <h1 className="text-3xl font-bold uppercase tracking-wide"><span className="text-[#1ea0e1]">AR</span> <span className="text-[#054296] font-[Orbitron]">infotech</span></h1>
         </a>
 
         <nav className="navmenu">
